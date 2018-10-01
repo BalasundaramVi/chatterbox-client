@@ -20,6 +20,8 @@ body {
     font-size: 35px;
     margin-bottom: 5px;
     padding: 5px;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 #main h1 span {
@@ -46,10 +48,20 @@ body {
     line-height: 13px;
 }
 
+#main {
+    background: rgb(99, 166, 211);
+    border: solid darkblue;
+    border-bottom-width: 0px;
+}
+
+#chats {
+    border: solid darkblue;
+    border-top-width: 0px;
+}
+
 form {
-    padding: 20px;
+    padding: 10px;
     padding-left: 0;
-    margin-bottom: 20px;
 }
 
 form input[type=text] {
