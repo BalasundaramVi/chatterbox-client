@@ -22,9 +22,12 @@ var App = {
       // examine the response from the server request:
       console.log(fulldata);
       var data = fulldata.results;
-      for (var i = data.length-1; i >= 0; i--) {
+      for (var i = data.length-1; i >= data.length - 30; i--) {
         MessagesView.render(data[i]);
       }
+      $(".username").on('click', function(event) {
+        Friends.toggleFriend($(event.target).text());
+      })
       callback();
     });
   },
