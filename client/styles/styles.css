@@ -1,5 +1,5 @@
 body {
-    background: #eee;
+    background: lightblue;
     text-align: center;
     padding: 0 25px;
     font-family: arial, sans-serif;
@@ -67,6 +67,14 @@ form input[type=text] {
 
 .chat .username {
     font-weight: 800;
+}
+
+.username {
+    display: inline;
+}
+
+.username:hover {
+    cursor: pointer;
 }
 
 .chat:hover {

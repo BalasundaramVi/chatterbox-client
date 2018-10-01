@@ -2,7 +2,7 @@ var Friends = {
     _friends: {},
 
 
-    toggleFriend: (friendName) => {
+    toggleStatus: (friendName) => {
         if (Friends._friends[friendName] === true) {
             Friends._friends[friendName] = false;
         } else {
