@@ -1,10 +1,9 @@
 var MessagesView = {
 
   $chats: $('#chats'),
-  _messages: {},
+  _messages: [],
 
   initialize: function() {
-
   },
 
   render: function(message) {
@@ -19,7 +18,7 @@ var MessagesView = {
   },
 
   renderMessage: function(message) {
-    MessagesView.$chats.append(MessageView.render(message));
+    MessagesView.$chats.prepend(MessageView.render(message));
   }
 
 };

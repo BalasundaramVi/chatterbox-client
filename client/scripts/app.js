@@ -22,7 +22,7 @@ var App = {
       // examine the response from the server request:
       console.log(fulldata);
       var data = fulldata.results;
-      for (var i = 0; i < data.length; i++) {
+      for (var i = data.length-1; i >= 0; i--) {
         MessagesView.render(data[i]);
       }
       callback();
